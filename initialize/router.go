@@ -14,7 +14,9 @@ func Routers() *gin.Engine {
 
 	ApiGroup := Router.Group("/api/v1")
 
+	// 将路由在这里进行注册
 	router.InitUserRouter(ApiGroup)
+	router.InitLogin(ApiGroup)
 
 	return Router
 

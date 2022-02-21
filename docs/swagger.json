@@ -1,0 +1,11 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "description": "ci-server api接口文档",
+        "title": "ci-server api接口文档",
+        "version": "1.0.0"
+    },
+    "host": "localhost:9090",
+    "paths": {}
+}

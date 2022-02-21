@@ -1,6 +1,8 @@
 package router
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 // router 可以当做是contruller
 
@@ -11,4 +13,5 @@ func InitLogin(r *gin.RouterGroup) {
 	{
 		loginGroup.POST("/")
 	}
+
 }
