@@ -6,11 +6,39 @@
         "contact": {},
         "version": "1.0"
     },
+    "host": "localhost:3001",
     "basePath": "/api/v1",
     "paths": {
         "/user": {
             "get": {
+                "tags": [
+                    "用户"
+                ],
                 "summary": "请求用户列表",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "default": 1,
+                        "description": "页码",
+                        "name": "page",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "default": 10,
+                        "description": "每页数量",
+                        "name": "size",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "用户名",
+                        "name": "name",
+                        "in": "query"
+                    }
+                ],
                 "responses": {}
             }
         }

@@ -10,10 +10,11 @@ import (
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
-// @title 后端基础架构api文档
-// @version 1.0
-// @description 后端基础架构api文档
-// @BasePath /api/v1
+// @title        后端基础架构api文档
+// @version      1.0
+// @description  后端基础架构api文档
+// @host         localhost:3001
+// @BasePath     /api/v1
 func main() {
 
 	// 执行路由初始化与启动

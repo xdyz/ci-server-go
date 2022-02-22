@@ -6,9 +6,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// @Router /user [get]
-// @Summary 请求用户列表
-// @Schemes
+// GetUsers godoc
+// @Tags     用户
+// @Summary  请求用户列表
+// @Param    page  query  int     true   "页码"    default(1)
+// @Param    size  query  int     true   "每页数量"  default(10)
+// @Param    name  query  string  false  "用户名"
+// @Router   /user [get]
 func GetUsers(g *gin.Context) {
 
 }
