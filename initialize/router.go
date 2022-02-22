@@ -1,7 +1,7 @@
 package initialize
 
 import (
-	"ci-server-go/router"
+	"go-basic-web/router"
 
 	"github.com/gin-gonic/gin"
 )

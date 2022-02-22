@@ -1,1 +1,1 @@
-# ci-server-go
+# go-basic-web

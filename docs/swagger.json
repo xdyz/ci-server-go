@@ -1,11 +1,35 @@
 {
     "swagger": "2.0",
     "info": {
+        "description": "后端基础架构api文档",
+        "title": "后端基础架构api文档",
         "contact": {},
-        "description": "ci-server api接口文档",
-        "title": "ci-server api接口文档",
-        "version": "1.0.0"
+        "version": "1.0"
     },
-    "host": "localhost:9090",
-    "paths": {}
+    "basePath": "/api/v1",
+    "paths": {
+        "/user": {
+            "get": {
+                "description": "do ping",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "example"
+                ],
+                "summary": "ping example",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
