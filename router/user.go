@@ -6,21 +6,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-/**
- * @Router /user/ GetUsers [get]
- * @Description 获取用户列表
- */
-
-// @BasePath /api/v1
-// PingExample godoc
-// @Summary ping example
-// @Schemes
-// @Description do ping
-// @Tags example
-// @Accept json
-// @Produce json
-// @Success 200 {string} Helloworld
 // @Router /user [get]
+// @Summary 请求用户列表
+// @Schemes
 func GetUsers(g *gin.Context) {
 
 }
