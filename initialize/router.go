@@ -1,6 +1,7 @@
 package initialize
 
 import (
+	"go-basic-web/middleware"
 	"go-basic-web/router"
 
 	"github.com/gin-gonic/gin"
@@ -9,6 +10,9 @@ import (
 // 必须指名有返回值 这样用到的地方就可以接收返回值了
 func Routers() *gin.Engine {
 	Router := gin.Default()
+	Router.Use(
+		middleware.LoggerMiddle(),
+	)
 
 	// 配置全局的路径 api/v1/
 
