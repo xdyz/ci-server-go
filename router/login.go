@@ -1,6 +1,8 @@
 package router
 
 import (
+	"go-basic-web/service"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -11,7 +13,7 @@ func InitLogin(r *gin.RouterGroup) {
 	//  这里可以启动中间件
 	loginGroup := r.Group("/login")
 	{
-		loginGroup.POST("/")
+		loginGroup.POST("/", service.Login)
 	}
 
 }
