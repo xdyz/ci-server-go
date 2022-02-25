@@ -15,12 +15,15 @@ import (
 func getWriter(fileName string) *rotatelogs.RotateLogs {
 	log, err := rotatelogs.New(
 		// 分割后的文件名称 aaa.log.YYYY-MM-DD.HH
-		fileName+"/%Y-%m-%d/"+"info.log.%Y%m%d%H%M",
-		rotatelogs.WithLinkName(fileName), // 生成软链，指向最新日志文件
+		fileName+"/%Y-%m-%d/"+"info.log",
+		// rotatelogs.WithLinkName(fileName), // 生成软链，指向最新日志文件
 		// 文件最大保存时间
 		rotatelogs.WithMaxAge(time.Hour*24*30), // 文件最大保存时间 30天
 		// 文件切割时间间隔
 		rotatelogs.WithRotationTime(time.Hour*24), // 日志切割时间间隔 24小时
+
+		// 最大保存文件的个数，这里为10个超过10个 自动删除第一个
+		// rotatelogs.WithRotationCount(10), // 日志切割时间间隔 24小时
 	)
 
 	if err != nil {
@@ -85,7 +88,7 @@ func initLogger() *zap.Logger {
 	return logger
 }
 
-// 初始化日志 到全局变量
 func init() {
-	global.Logger = initLogger()
+
+	global.Logger = initLogger() // 初始化日志 到全局变量
 }

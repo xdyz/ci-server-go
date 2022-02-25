@@ -11,6 +11,7 @@ import (
 func Routers() *gin.Engine {
 	Router := gin.Default()
 	Router.Use(
+		middleware.CorsMiddle(),
 		middleware.LoggerMiddle(),
 	)
 
