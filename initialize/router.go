@@ -12,13 +12,6 @@ func Routers() *gin.Engine {
 	Router := gin.Default()
 
 	Router.Use(
-		// cors.New(cors.Options{
-		// 	AllowedOrigins:   []string{"*"},
-		// 	AllowCredentials: true,
-		// 	AllowedHeaders:   []string{"*"},
-		// 	AllowedMethods:   []string{"GET", "POST", "OPTIONS", "PUT", "DELETE", "UPDATE"},
-
-		// }),
 		middleware.CorsMiddle(),   // cors 中间件
 		middleware.LoggerMiddle(), // 接口日志中间件
 	)
