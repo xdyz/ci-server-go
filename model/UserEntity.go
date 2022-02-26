@@ -9,6 +9,7 @@ type UserEntity struct {
 	UserName string `gorm:"type:varchar(50);column:username;not null;unique;comment:'用户名'" json:"username"`
 	Password string `gorm:"type:varchar(50);not null;comment:'密码'" json:"password`
 	NickName string `gorm:"type:varchar(50);column:nickname;not null;comment:'昵称'" json:"nickname"`
+	IsRoot   bool   `gorm:"type:tinyint(1);not null;default:0;comment:'是否是管理员'" json:"isRoot"`
 }
 
 // 表名
