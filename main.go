@@ -17,6 +17,7 @@ import (
 // @host         localhost:3001
 // @BasePath     /api/v1
 func main() {
+
 	// 执行路由初始化与启动
 	router := initialize.Routers()
 
