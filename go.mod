@@ -10,6 +10,8 @@ require (
 	github.com/swaggo/gin-swagger v1.4.1
 	github.com/swaggo/swag v1.8.0
 	go.uber.org/zap v1.21.0
+	gorm.io/driver/mysql v1.3.2
+	gorm.io/gorm v1.23.1
 )
 
 require (
@@ -48,6 +50,4 @@ require (
 	golang.org/x/tools v0.1.9 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gorm.io/driver/mysql v1.3.2 // indirect
-	gorm.io/gorm v1.23.1 // indirect
 )
