@@ -38,5 +38,8 @@ func init() {
 	global.DB = InitDataBase()
 
 	// 初始化数据库表
-	global.DB.AutoMigrate(&model.UserEntity{})
+	err := global.DB.AutoMigrate(&model.UserEntity{})
+	if err != nil {
+		panic(err)
+	}
 }

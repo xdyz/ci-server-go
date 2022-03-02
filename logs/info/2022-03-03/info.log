@@ -1,0 +1,81 @@
+{"level":"INFO","time":"2022-03-03 00:00:27","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000001583}
+{"level":"INFO","time":"2022-03-03 00:01:55","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:02:10","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:02:18","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:02:28","msg":"/swagger/index.html","status":200,"method":"GET","path":"/swagger/index.html","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.003526875}
+{"level":"INFO","time":"2022-03-03 00:02:28","msg":"/swagger/swagger-ui.css","status":200,"method":"GET","path":"/swagger/swagger-ui.css","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.00022375}
+{"level":"INFO","time":"2022-03-03 00:02:28","msg":"/swagger/swagger-ui-standalone-preset.js","status":200,"method":"GET","path":"/swagger/swagger-ui-standalone-preset.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.001186625}
+{"level":"INFO","time":"2022-03-03 00:02:28","msg":"/swagger/swagger-ui-bundle.js","status":200,"method":"GET","path":"/swagger/swagger-ui-bundle.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002160959}
+{"level":"INFO","time":"2022-03-03 00:03:43","msg":"/swagger/doc.json","status":200,"method":"GET","path":"/swagger/doc.json","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000735292}
+{"level":"INFO","time":"2022-03-03 00:03:43","msg":"/swagger/favicon-32x32.png","status":200,"method":"GET","path":"/swagger/favicon-32x32.png","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.00007725}
+{"level":"INFO","time":"2022-03-03 00:13:05","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:13:13","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:13:17","msg":"/swagger/index.html","status":200,"method":"GET","path":"/swagger/index.html","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.00339575}
+{"level":"INFO","time":"2022-03-03 00:13:17","msg":"/swagger/swagger-ui.css","status":200,"method":"GET","path":"/swagger/swagger-ui.css","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000244041}
+{"level":"INFO","time":"2022-03-03 00:13:17","msg":"/swagger/swagger-ui-standalone-preset.js","status":200,"method":"GET","path":"/swagger/swagger-ui-standalone-preset.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000837042}
+{"level":"INFO","time":"2022-03-03 00:13:17","msg":"/swagger/swagger-ui-bundle.js","status":200,"method":"GET","path":"/swagger/swagger-ui-bundle.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000948833}
+{"level":"INFO","time":"2022-03-03 00:14:32","msg":"/swagger/doc.json","status":200,"method":"GET","path":"/swagger/doc.json","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.001096875}
+{"level":"INFO","time":"2022-03-03 00:14:32","msg":"/swagger/favicon-32x32.png","status":200,"method":"GET","path":"/swagger/favicon-32x32.png","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000097208}
+{"level":"INFO","time":"2022-03-03 00:16:34","msg":"/swagger/index.html","status":200,"method":"GET","path":"/swagger/index.html","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000533333}
+{"level":"INFO","time":"2022-03-03 00:16:34","msg":"/swagger/swagger-ui-standalone-preset.js","status":304,"method":"GET","path":"/swagger/swagger-ui-standalone-preset.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000057}
+{"level":"INFO","time":"2022-03-03 00:16:34","msg":"/swagger/swagger-ui-bundle.js","status":304,"method":"GET","path":"/swagger/swagger-ui-bundle.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000022541}
+{"level":"INFO","time":"2022-03-03 00:16:34","msg":"/swagger/swagger-ui.css","status":304,"method":"GET","path":"/swagger/swagger-ui.css","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000018}
+{"level":"INFO","time":"2022-03-03 00:17:15","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:17:19","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:17:38","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:17:47","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:17:49","msg":"/swagger/doc.json","status":200,"method":"GET","path":"/swagger/doc.json","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.001325875}
+{"level":"INFO","time":"2022-03-03 00:17:49","msg":"/swagger/favicon-32x32.png","status":200,"method":"GET","path":"/swagger/favicon-32x32.png","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000397708}
+{"level":"INFO","time":"2022-03-03 00:21:11","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:21:16","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:21:19","msg":"/swagger/index.html","status":200,"method":"GET","path":"/swagger/index.html","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.003233375}
+{"level":"INFO","time":"2022-03-03 00:21:19","msg":"/swagger/swagger-ui.css","status":200,"method":"GET","path":"/swagger/swagger-ui.css","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000212833}
+{"level":"INFO","time":"2022-03-03 00:21:19","msg":"/swagger/swagger-ui-standalone-preset.js","status":200,"method":"GET","path":"/swagger/swagger-ui-standalone-preset.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000264958}
+{"level":"INFO","time":"2022-03-03 00:21:19","msg":"/swagger/swagger-ui-bundle.js","status":200,"method":"GET","path":"/swagger/swagger-ui-bundle.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002440333}
+{"level":"INFO","time":"2022-03-03 00:22:34","msg":"/swagger/doc.json","status":200,"method":"GET","path":"/swagger/doc.json","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000727084}
+{"level":"INFO","time":"2022-03-03 00:22:34","msg":"/swagger/favicon-32x32.png","status":200,"method":"GET","path":"/swagger/favicon-32x32.png","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.000088416}
+{"level":"INFO","time":"2022-03-03 00:31:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:32:45","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:32:50","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:36:35","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:36:40","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:41:18","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:41:29","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:41:49","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:41:58","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:46:29","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:46:42","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.007425959}
+{"level":"INFO","time":"2022-03-03 00:48:04","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:48:08","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:48:10","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.005293917}
+{"level":"INFO","time":"2022-03-03 00:48:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:48:56","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:48:58","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.013043416}
+{"level":"INFO","time":"2022-03-03 00:59:24","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 00:59:58","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:00:09","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:01:31","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:01:50","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:02:10","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:02:48","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:08:19","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:08:36","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:09:14","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:09:38","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:09:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:09:43","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:10:03","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:11:03","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:11:27","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:15:13","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:16:24","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:16:45","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:19:25","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:19:29","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:19:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:20:43","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:21:32","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:22:51","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:23:42","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:23:45","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 01:26:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}

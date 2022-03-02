@@ -16,7 +16,7 @@ func Response(c *gin.Context, code int, message, data interface{}) {
 
 // 接口成功时 统一进行返回
 func Success(c *gin.Context, message string, data interface{}) {
-	Response(c, 0, "请求成功", "")
+	Response(c, 0, "请求成功", data)
 }
 
 // 接口错误的时候 统一的请求返回

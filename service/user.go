@@ -5,6 +5,7 @@ import (
 	"go-basic-web/global"
 	"go-basic-web/model"
 	"go-basic-web/utils"
+	"go-basic-web/vo"
 
 	"github.com/gin-gonic/gin"
 )
@@ -17,17 +18,32 @@ import (
 // @Param    name  query  string  false  "用户名"
 // @Router   /user [get]
 func GetUsers(c *gin.Context) {
+	var uDto dto.GetUsersDto
 
+	// 解析请求的query参数 并且校验参数 失败返回错误
+	if err := c.ShouldBindQuery(&uDto); err != nil {
+		utils.Faild(c, err.Error())
+		return
+	}
+
+	uList := make([]vo.UserVo, 10)
+
+	// 查询用户列表 分页查询
+	global.DB.Model(&model.UserEntity{}).Offset((uDto.Page - 1) * uDto.Size).Limit(uDto.Size).Find(&uList)
+
+	utils.Success(c, "", uList)
 }
 
 // 登录做校验，通过账号密码查询用户是否存在
 func GetUserByName(c *gin.Context) {
 
 	// 实例化一个结构体
-	var u dto.GetUserByNameDto
+	var uDto dto.GetUserByNameDto
+
+	var uVo vo.UserVo
 
 	// 解析请求参数 并且校验参数 失败返回错误
-	if err := c.ShouldBindJSON(&u); err != nil {
+	if err := c.ShouldBindJSON(&uDto); err != nil {
 		utils.Faild(c, err.Error())
 
 		return
@@ -36,8 +52,10 @@ func GetUserByName(c *gin.Context) {
 	// 查询用户是否存在 只取其中某些字段 这里需要用到 vo 的概念
 	// global.DB.Where("username = ?", u.UserName).First(&u)
 
-	// 这里需要将&u 改为 vo的结构体 这样只返回需要的字段就可以了
-	global.DB.Model(&model.UserEntity{}).Where("username = ?", u.UserName).First(&u)
+	// 为 vo的结构体 这样只返回需要的字段就可以了
+	global.DB.Model(&model.UserEntity{}).Where("username = ?", uDto.UserName).First(&uVo)
+
+	utils.Success(c, "", uVo)
 
 }
 
@@ -48,5 +66,16 @@ func GetUserByName(c *gin.Context) {
 // @Router   /user/{id} [get]
 
 func GetUserById(c *gin.Context) {
+	id := c.Param("id")
+	if id == "" {
+		utils.Faild(c, "id不能为空")
+		return
+	}
+
+	var u vo.UserVo
+
+	global.DB.Model(&model.UserEntity{}).Where("id = ?", id).First(&u)
+
+	utils.Success(c, "", u)
 
 }
