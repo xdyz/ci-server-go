@@ -27,11 +27,19 @@ func GetUsers(c *gin.Context) {
 	}
 
 	uList := make([]vo.UserVo, 10)
+	var uCount int64
 
 	// 查询用户列表 分页查询
-	global.DB.Model(&model.UserEntity{}).Offset((uDto.Page - 1) * uDto.Size).Limit(uDto.Size).Find(&uList)
+	tx := global.DB.Model(&model.UserEntity{}).Offset((uDto.Page - 1) * uDto.Size).Limit(uDto.Size).Find(&uList).Count(&uCount)
 
-	utils.Success(c, "", uList)
+	if tx.Error != nil {
+		utils.Faild(c, tx.Error.Error())
+		return
+	}
+	utils.Success(c, "", gin.H{
+		"data":  uList,
+		"total": uCount,
+	})
 }
 
 // 登录做校验，通过账号密码查询用户是否存在
@@ -50,21 +58,23 @@ func GetUserByName(c *gin.Context) {
 	}
 
 	// 查询用户是否存在 只取其中某些字段 这里需要用到 vo 的概念
-	// global.DB.Where("username = ?", u.UserName).First(&u)
 
 	// 为 vo的结构体 这样只返回需要的字段就可以了
-	global.DB.Model(&model.UserEntity{}).Where("username = ?", uDto.UserName).First(&uVo)
+	tx := global.DB.Model(&model.UserEntity{}).Where("username = ?", uDto.UserName).First(&uVo)
 
+	if tx.Error != nil {
+		utils.Faild(c, "查询数据失败")
+		return
+	}
 	utils.Success(c, "", uVo)
 
 }
 
-// GetUserById godoc
+// GetUsers godoc
 // @Tags     用户
 // @Summary  通过id 查询用户
 // @Param    id  path  int     true   "用户id"
 // @Router   /user/{id} [get]
-
 func GetUserById(c *gin.Context) {
 	id := c.Param("id")
 	if id == "" {
@@ -72,10 +82,31 @@ func GetUserById(c *gin.Context) {
 		return
 	}
 
-	var u vo.UserVo
+	// 实例化一个结构体
+	var user vo.UserVo
 
-	global.DB.Model(&model.UserEntity{}).Where("id = ?", id).First(&u)
+	tx := global.DB.Model(&model.UserEntity{}).Where("id = ?", id).First(&user) // 查询用户
+	if tx.Error != nil {
+		utils.Faild(c, tx.Error.Error())
+		return
+	}
 
-	utils.Success(c, "", u)
+	// accountId := ctx.GetFloat64("id")
+	// var accountEntity model.AccountEntity
+	// if result := global.DB.Where("id=?", int(accountId)).Select([]string{"sponsor_id"}).First(&accountEntity).Error; result != nil {
+	// 	global.Logger.Error("查询活动列表失败" + result.Error())
+	// 	utils.Fail(ctx, "查询活动列表失败")
+	// 	return
+	// }
+	// var activitySimpleListEntity []vo.ActivitySimpleVo
+	// if result := global.DB.Model(&model.ActivityEntity{}).Where("sponsor_id=?", accountEntity.SponsorID).Order("id desc").Find(&activitySimpleListEntity).Error; result != nil {
+	// 	global.Logger.Error("查询活动列表失败" + result.Error())
+	// 	utils.Fail(ctx, "查询活动列表失败")
+	// 	return
+	// }
+	// utils.Success(ctx, activitySimpleListEntity)
+	// return
+
+	utils.Success(c, "", user)
 
 }

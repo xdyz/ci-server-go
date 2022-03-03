@@ -10,7 +10,7 @@ func Response(c *gin.Context, code int, message, data interface{}) {
 	c.JSON(http.StatusOK, gin.H{
 		"code":    code,
 		"message": message,
-		"data":    data,
+		"result":  data,
 	})
 }
 
