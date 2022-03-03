@@ -10,3 +10,11 @@ type GetUsersDto struct {
 	Page int `json:"page" bingding:"required"`
 	Size int `json:"size" bingding:"required"`
 }
+
+type CreateUserDto struct {
+	UserName string `json:"username" bingding:"required"`
+	Password string `json:"password" bingding:"required"`
+	NickName string `json:"nickname" bingding:"required"`
+	Email    string `json:"email"`
+	IsRoot   bool   `json:"isRoot"`
+}

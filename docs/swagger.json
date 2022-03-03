@@ -40,6 +40,20 @@
                     }
                 ],
                 "responses": {}
+            },
+            "post": {
+                "parameters": [
+                    {
+                        "description": "用户信息",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.CreateUserDto"
+                        }
+                    }
+                ],
+                "responses": {}
             }
         },
         "/user/{id}": {
@@ -58,6 +72,28 @@
                     }
                 ],
                 "responses": {}
+            }
+        }
+    },
+    "definitions": {
+        "dto.CreateUserDto": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "isRoot": {
+                    "type": "boolean"
+                },
+                "nickname": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                }
             }
         }
     }

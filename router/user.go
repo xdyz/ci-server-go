@@ -15,5 +15,6 @@ func InitUserRouter(r *gin.RouterGroup) {
 	{
 		userGroup.GET("/", service.GetUsers)       // 请求用户列表
 		userGroup.GET("/:id", service.GetUserById) // 通过id 查询用户
+		userGroup.POST("/", service.CreateUser)    // 创建用户
 	}
 }

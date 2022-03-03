@@ -1,6 +1,7 @@
 package service
 
 import (
+	"fmt"
 	"go-basic-web/dto"
 	"go-basic-web/global"
 	"go-basic-web/model"
@@ -70,7 +71,7 @@ func GetUserByName(c *gin.Context) {
 
 }
 
-// GetUsers godoc
+// GetUserById godoc
 // @Tags     用户
 // @Summary  通过id 查询用户
 // @Param    id  path  int     true   "用户id"
@@ -91,22 +92,34 @@ func GetUserById(c *gin.Context) {
 		return
 	}
 
-	// accountId := ctx.GetFloat64("id")
-	// var accountEntity model.AccountEntity
-	// if result := global.DB.Where("id=?", int(accountId)).Select([]string{"sponsor_id"}).First(&accountEntity).Error; result != nil {
-	// 	global.Logger.Error("查询活动列表失败" + result.Error())
-	// 	utils.Fail(ctx, "查询活动列表失败")
-	// 	return
-	// }
-	// var activitySimpleListEntity []vo.ActivitySimpleVo
-	// if result := global.DB.Model(&model.ActivityEntity{}).Where("sponsor_id=?", accountEntity.SponsorID).Order("id desc").Find(&activitySimpleListEntity).Error; result != nil {
-	// 	global.Logger.Error("查询活动列表失败" + result.Error())
-	// 	utils.Fail(ctx, "查询活动列表失败")
-	// 	return
-	// }
-	// utils.Success(ctx, activitySimpleListEntity)
-	// return
-
 	utils.Success(c, "", user)
+}
 
+// CreateUser godoc
+// Tags 	 用户
+// Summary 	 创建用户
+// @Param 	 body 	 body 	 dto.CreateUserDto 	 true 	 "用户信息"
+// @Router /user [post]
+func CreateUser(c *gin.Context) {
+	var uDto dto.CreateUserDto
+
+	// 解析请求参数 并且校验参数 失败返回错误
+	if err := c.ShouldBindJSON(&uDto); err != nil {
+		utils.Faild(c, err.Error())
+		return
+	}
+
+	fmt.Printf("uDto: %v\n", uDto)
+
+	user := model.UserEntity{
+
+	}
+
+	tx := global.DB.Create(&user).
+	if tx.Error != nil {
+		utils.Faild(c, tx.Error.Error())
+		return
+	}
+
+	utils.Success(c, "", nil)
 }
