@@ -152,3 +152,21 @@
 {"level":"INFO","time":"2022-03-03 15:08:09","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002462382}
 {"level":"INFO","time":"2022-03-03 15:08:15","msg":"/api/v1/user/2","status":200,"method":"GET","path":"/api/v1/user/2","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002970494}
 {"level":"INFO","time":"2022-03-03 15:08:20","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002307092}
+{"level":"INFO","time":"2022-03-03 15:16:44","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:16:56","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:16:58","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.004977722}
+{"level":"INFO","time":"2022-03-03 15:17:14","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:17:16","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.003589057}
+{"level":"INFO","time":"2022-03-03 15:17:25","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:17:29","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:17:50","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:18:06","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:18:25","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:18:39","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:18:46","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.003083822}
+{"level":"INFO","time":"2022-03-03 15:18:49","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002856264}
+{"level":"INFO","time":"2022-03-03 15:18:51","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.003112631}
+{"level":"INFO","time":"2022-03-03 15:19:26","msg":"/api/v1/user/","status":200,"method":"GET","path":"/api/v1/user/","query":"page=1&size=10","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.004161955}
+{"level":"INFO","time":"2022-03-03 15:19:30","msg":"/api/v1/user/1","status":200,"method":"GET","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002184981}
+{"level":"INFO","time":"2022-03-03 15:22:09","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-03 15:22:13","msg":"后端基础架构api文档启动成功，监听端口：3001"}
