@@ -12,7 +12,6 @@ type GetUsersDto struct {
 }
 
 type CreateUserDto struct {
-	BasicDto
 	Username string `json:"username" bingding:"required"`
 	Password string `json:"password" bingding:"required"`
 	Nickname string `json:"nickname" bingding:"required"`

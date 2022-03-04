@@ -173,7 +173,7 @@ func UpdateUserById(c *gin.Context) {
 		return
 	}
 
-	tx := global.DB.Delete(&model.UserEntity{}, uId)
+	tx := global.DB.Table(model.UserEntity{}.TableName()).Where("id = ?", 1).Updates(&uDto)
 	if tx.Error != nil {
 		utils.Faild(c, tx.Error.Error())
 		return

@@ -251,3 +251,21 @@
 {"level":"INFO","time":"2022-03-04 16:33:59","msg":"后端基础架构api文档启动成功，监听端口：3001"}
 {"level":"INFO","time":"2022-03-04 16:35:11","msg":"后端基础架构api文档启动成功，监听端口：3001"}
 {"level":"INFO","time":"2022-03-04 17:14:47","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:15:12","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:15:59","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:16:51","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:17:54","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:18:05","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:18:44","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:19:47","msg":"/swagger/index.html","status":200,"method":"GET","path":"/swagger/index.html","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.004225458}
+{"level":"INFO","time":"2022-03-04 23:19:47","msg":"/swagger/swagger-ui.css","status":200,"method":"GET","path":"/swagger/swagger-ui.css","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.001225583}
+{"level":"INFO","time":"2022-03-04 23:19:47","msg":"/swagger/swagger-ui-standalone-preset.js","status":200,"method":"GET","path":"/swagger/swagger-ui-standalone-preset.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.00114175}
+{"level":"INFO","time":"2022-03-04 23:19:47","msg":"/swagger/swagger-ui-bundle.js","status":200,"method":"GET","path":"/swagger/swagger-ui-bundle.js","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.002305458}
+{"level":"INFO","time":"2022-03-04 23:19:47","msg":"/swagger/doc.json","status":200,"method":"GET","path":"/swagger/doc.json","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.001682917}
+{"level":"INFO","time":"2022-03-04 23:19:52","msg":"/api/v1/user/","status":200,"method":"POST","path":"/api/v1/user/","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.020749375}
+{"level":"INFO","time":"2022-03-04 23:20:10","msg":"/api/v1/user/1","status":200,"method":"DELETE","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.023366791}
+{"level":"INFO","time":"2022-03-04 23:20:11","msg":"/api/v1/user/1","status":200,"method":"DELETE","path":"/api/v1/user/1","query":"","params":null,"ip":"::1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36","errors":"","cost":0.007668666}
+{"level":"INFO","time":"2022-03-04 23:20:43","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:25:27","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:25:41","msg":"后端基础架构api文档启动成功，监听端口：3001"}
+{"level":"INFO","time":"2022-03-04 23:28:27","msg":"后端基础架构api文档启动成功，监听端口：3001"}
