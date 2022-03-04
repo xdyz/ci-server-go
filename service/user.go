@@ -96,8 +96,8 @@ func GetUserById(c *gin.Context) {
 }
 
 // CreateUser godoc
-// Tags 	 用户
-// Summary 	 创建用户
+// @Tags 	 用户
+// @Summary 	 创建用户
 // @Param 	 body 	 body 	 dto.CreateUserDto 	 true 	 "用户信息"
 // @Router /user [post]
 func CreateUser(c *gin.Context) {
@@ -111,11 +111,7 @@ func CreateUser(c *gin.Context) {
 
 	fmt.Printf("uDto: %v\n", uDto)
 
-	user := model.UserEntity{
-
-	}
-
-	tx := global.DB.Create(&user).
+	tx := global.DB.Create(&uDto)
 	if tx.Error != nil {
 		utils.Faild(c, tx.Error.Error())
 		return

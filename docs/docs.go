@@ -4,7 +4,7 @@ package docs
 
 import "github.com/swaggo/swag"
 
-const docTemplate = `{
+const docTemplate_swagger = `{
     "schemes": {{ marshal .Schemes }},
     "swagger": "2.0",
     "info": {
@@ -49,6 +49,10 @@ const docTemplate = `{
                 "responses": {}
             },
             "post": {
+                "tags": [
+                    "用户"
+                ],
+                "summary": "创建用户",
                 "parameters": [
                     {
                         "description": "用户信息",
@@ -106,8 +110,8 @@ const docTemplate = `{
     }
 }`
 
-// SwaggerInfo holds exported Swagger Info so clients can modify it
-var SwaggerInfo = &swag.Spec{
+// SwaggerInfo_swagger holds exported Swagger Info so clients can modify it
+var SwaggerInfo_swagger = &swag.Spec{
 	Version:          "1.0",
 	Host:             "localhost:3001",
 	BasePath:         "/api/v1",
@@ -115,9 +119,9 @@ var SwaggerInfo = &swag.Spec{
 	Title:            "后端基础架构api文档",
 	Description:      "后端基础架构api文档",
 	InfoInstanceName: "swagger",
-	SwaggerTemplate:  docTemplate,
+	SwaggerTemplate:  docTemplate_swagger,
 }
 
 func init() {
-	swag.Register(SwaggerInfo.InstanceName(), SwaggerInfo)
+	swag.Register(SwaggerInfo_swagger.InstanceName(), SwaggerInfo_swagger)
 }

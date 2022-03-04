@@ -52,6 +52,9 @@ paths:
         schema:
           $ref: '#/definitions/dto.CreateUserDto'
       responses: {}
+      summary: 创建用户
+      tags:
+      - 用户
   /user/{id}:
     get:
       parameters:
