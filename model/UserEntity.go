@@ -6,7 +6,7 @@ import "gorm.io/gorm"
 // 这里的 json 设置就是 当接口查询时，返回给前端的 对象数据中 的属性 是什么
 type UserEntity struct {
 	gorm.Model
-	UserName string `gorm:"type:varchar(50);column:username;not null;unique;comment:'用户名'" json:"username"`
+	Username string `gorm:"type:varchar(50);column:username;not null;unique;comment:'用户名'" json:"username"`
 	Password string `gorm:"type:varchar(50);not null;comment:'密码'" json:"password"`
 	Nickname string `gorm:"type:varchar(50);column:nickname;not null;comment:'昵称'" json:"nickname"`
 	Email    string `gorm:"type:varchar(50);not null;comment:'邮箱'" json:"email"`

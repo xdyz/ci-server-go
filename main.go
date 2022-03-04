@@ -7,6 +7,7 @@ import (
 	"go-basic-web/global"
 	"go-basic-web/initialize"
 
+	"github.com/fvbock/endless"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
@@ -27,5 +28,7 @@ func main() {
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
 
 	global.Logger.Sugar().Infof("后端基础架构api文档启动成功，监听端口：%s", "3001")
-	router.Run(":3001")
+	// router.Run(":3001")
+
+	endless.ListenAndServe(":3001", router)
 }

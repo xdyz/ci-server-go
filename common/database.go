@@ -11,13 +11,13 @@ import (
 
 func InitDataBase() *gorm.DB {
 	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=%s&parseTime=True&loc=%s",
-		"root",            // 用户名
-		"123456",          // 密码
-		"127.0.0.1",       // 主机
-		"3306",            // 端口
-		"go_basic",        // 数据库
-		"utf8",            // 字符集
-		"Asia%2FShanghai", // 时区
+		"root",      // 用户名
+		"123456",    // 密码
+		"127.0.0.1", // 主机
+		"3306",      // 端口
+		"go_basic",  // 数据库
+		"utf8mb4",   // 字符集
+		"Local",     // 时区
 	)
 
 	// 连接数据库 如果没有错误，则返回数据库连接

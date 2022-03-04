@@ -2,7 +2,7 @@ package dto
 
 // 定义UserDto结构体 json转换 bingding 格式校验
 type GetUserByNameDto struct {
-	UserName string `json:"username" bingding:"required"`
+	Username string `json:"username" bingding:"required"`
 	Password string `json:"password" bingding:"required"`
 }
 
@@ -12,9 +12,14 @@ type GetUsersDto struct {
 }
 
 type CreateUserDto struct {
-	UserName string `json:"username" bingding:"required"`
+	BasicDto
+	Username string `json:"username" bingding:"required"`
 	Password string `json:"password" bingding:"required"`
-	NickName string `json:"nickname" bingding:"required"`
+	Nickname string `json:"nickname" bingding:"required"`
 	Email    string `json:"email"`
 	IsRoot   bool   `json:"isRoot"`
+}
+
+type UpdateUserDto struct {
+	CreateUserDto
 }

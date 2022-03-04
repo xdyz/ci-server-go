@@ -83,6 +83,22 @@ const docTemplate_swagger = `{
                     }
                 ],
                 "responses": {}
+            },
+            "delete": {
+                "tags": [
+                    "用户"
+                ],
+                "summary": "删除用户",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "用户id",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {}
             }
         }
     },
@@ -103,6 +119,7 @@ const docTemplate_swagger = `{
                     "type": "string"
                 },
                 "username": {
+                    "description": "BasicDto",
                     "type": "string"
                 }
             }

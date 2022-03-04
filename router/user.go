@@ -13,8 +13,10 @@ func InitUserRouter(r *gin.RouterGroup) {
 	// userGroup := r.Group("/user").Use(middleware.AuthToken())
 	userGroup := r.Group("/user")
 	{
-		userGroup.GET("/", service.GetUsers)       // 请求用户列表
-		userGroup.GET("/:id", service.GetUserById) // 通过id 查询用户
-		userGroup.POST("/", service.CreateUser)    // 创建用户
+		userGroup.GET("/", service.GetUsers)             // 请求用户列表
+		userGroup.GET("/:id", service.GetUserById)       // 通过id 查询用户
+		userGroup.POST("/", service.CreateUser)          // 创建用户
+		userGroup.DELETE("/:id", service.DeleteUserById) // 通过id 删除用户
+		userGroup.PUT("/:id", service.UpdateUserById)
 	}
 }

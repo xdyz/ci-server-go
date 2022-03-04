@@ -61,7 +61,7 @@ func GetUserByName(c *gin.Context) {
 	// 查询用户是否存在 只取其中某些字段 这里需要用到 vo 的概念
 
 	// 为 vo的结构体 这样只返回需要的字段就可以了
-	tx := global.DB.Model(&model.UserEntity{}).Where("username = ?", uDto.UserName).First(&uVo)
+	tx := global.DB.Model(&model.UserEntity{}).Where("username = ?", uDto.Username).First(&uVo)
 
 	if tx.Error != nil {
 		utils.Faild(c, "查询数据失败")
@@ -111,11 +111,74 @@ func CreateUser(c *gin.Context) {
 
 	fmt.Printf("uDto: %v\n", uDto)
 
-	tx := global.DB.Create(&uDto)
+	// 实例化一个结构体
+	// user := model.UserEntity{
+	// 	Username: uDto.Username,
+	// 	Password: uDto.Password,
+	// 	Email:    uDto.Email,
+	// 	IsRoot:   uDto.IsRoot,
+	// 	Nickname: uDto.Nickname,
+	// }
+
+	// 这里不能使用dto的
+	tx := global.DB.Table("user").Create(&uDto)
 	if tx.Error != nil {
 		utils.Faild(c, tx.Error.Error())
 		return
 	}
 
 	utils.Success(c, "", nil)
+}
+
+// DeleteUser godoc
+// @Tags     用户
+// @Summary  删除用户
+// @Param    id  path  int     true   "用户id"
+// @Router   /user/{id} [delete]
+func DeleteUserById(c *gin.Context) {
+	uId := c.Param("id")
+
+	if uId == "" {
+		utils.Faild(c, "id不能为空")
+		return
+	}
+
+	tx := global.DB.Delete(&model.UserEntity{}, uId)
+	if tx.Error != nil {
+		utils.Faild(c, tx.Error.Error())
+		return
+	}
+
+	utils.Success(c, "", nil)
+
+}
+
+// UpdateUser godoc
+// @Tags     用户
+// @Summary  更新用户
+// @Param    id  path  int     true   "用户id"
+// @Param    body body  dto.UpdateUserDto  true   "用户信息"
+// @Router   /user/{id} [put]
+func UpdateUserById(c *gin.Context) {
+	var uDto dto.UpdateUserDto
+
+	uId := c.Param("id")
+
+	if uId == "" {
+		utils.Faild(c, "id不能为空")
+		return
+	}
+	if err := c.ShouldBindJSON(&uDto); err != nil {
+		utils.Faild(c, err.Error())
+		return
+	}
+
+	tx := global.DB.Delete(&model.UserEntity{}, uId)
+	if tx.Error != nil {
+		utils.Faild(c, tx.Error.Error())
+		return
+	}
+
+	utils.Success(c, "", nil)
+
 }
